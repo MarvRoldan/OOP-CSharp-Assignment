@@ -12,61 +12,47 @@ namespace Painting
 
         private int year;
 
-        public virtual void isamaster()
-        {
+        public virtual void isamaster() {
             Console.WriteLine("Is not a Renaissance Master");
         }
 
-        public void hiddenTruth()
-        {
+        public void hiddenTruth() {
             Console.WriteLine("This is a self-portrait");
 
         }
 
-        public string Myname
-        {
-            get
-            {
+        public string Myname {
+            get {
                 return name;
             }
-            set
-            {
+            set {
                 name = value;
             }
         }
 
-        public string Myartist
-        {
-            get
-            {
+        public string Myartist {
+            get {
                 return artist;
             }
-            set
-            {
+            set {
                 artist = value;
             }
         }
 
-        public string Mymedium
-        {
-            get
-            {
+        public string Mymedium {
+            get {
                 return medium;
             }
-            set
-            {
+            set {
                 medium = value;
             }
         }
 
-        public int Myyear
-        {
-            get
-            {
+        public int Myyear {
+            get {
                 return year;
             }
-            set
-            {
+            set {
                 year = value;
             }
         }
@@ -76,8 +62,7 @@ namespace Painting
     {
         public string artist = "Leonardo da Vinci";
 
-        public override void isamaster()
-        {
+        public override void isamaster() {
             Console.WriteLine("Is a Renaissance Master");
         }
 
