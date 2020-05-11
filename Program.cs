@@ -12,8 +12,15 @@ namespace Painting
 
         private int year;
 
-        public virtual void isamaster() {
+        public virtual void isamaster()
+        {
             Console.WriteLine("Is not a Renaissance Master");
+        }
+
+        public void hiddenTruth()
+        {
+            Console.WriteLine("This is a self-portrait");
+
         }
 
         public string Myname
@@ -65,13 +72,17 @@ namespace Painting
         }
     }
 
-    class Leo : Painting 
+    class Leo : Painting
     {
         public string artist = "Leonardo da Vinci";
 
         public override void isamaster()
         {
             Console.WriteLine("Is a Renaissance Master");
+        }
+
+        public void openLie() {
+            Console.WriteLine("This is not a self-portrait");
         }
     }
 
@@ -92,7 +103,12 @@ namespace Painting
             Console.WriteLine("Artist: " + newLeo.artist);
             Console.WriteLine("Medium: " + myPainting.Mymedium);
             Console.WriteLine("Year: " + myPainting.Myyear);
+
+            // Polymorphism
             newLeo.isamaster();
+
+            // Abstraction
+            newLeo.openLie();
         }
     }
 }
