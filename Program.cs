@@ -65,7 +65,17 @@ namespace Painting
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Encapsulation 
+            Painting myPainting = new Painting();
+            myPainting.Myname = "Mona Lisa";
+            myPainting.Myartist = "Leonardo da Vinci";
+            myPainting.Mymedium = "Oil";
+            myPainting.Myyear = 1506;
+
+            Console.WriteLine("Name: " + myPainting.Myname);
+            Console.WriteLine("Artist: " + myPainting.Myartist);
+            Console.WriteLine("Medium: " + myPainting.Mymedium);
+            Console.WriteLine("Year: " + myPainting.Myyear);
         }
     }
 }
