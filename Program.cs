@@ -12,6 +12,10 @@ namespace Painting
 
         private int year;
 
+        public virtual void isamaster() {
+            Console.WriteLine("Is not a Renaissance Master");
+        }
+
         public string Myname
         {
             get
@@ -64,6 +68,11 @@ namespace Painting
     class Leo : Painting 
     {
         public string artist = "Leonardo da Vinci";
+
+        public override void isamaster()
+        {
+            Console.WriteLine("Is a Renaissance Master");
+        }
     }
 
     class Program
@@ -83,6 +92,7 @@ namespace Painting
             Console.WriteLine("Artist: " + newLeo.artist);
             Console.WriteLine("Medium: " + myPainting.Mymedium);
             Console.WriteLine("Year: " + myPainting.Myyear);
+            newLeo.isamaster();
         }
     }
 }
