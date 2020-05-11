@@ -61,6 +61,11 @@ namespace Painting
         }
     }
 
+    class Leo : Painting 
+    {
+        public string artist = "Leonardo da Vinci";
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -68,12 +73,14 @@ namespace Painting
             // Encapsulation 
             Painting myPainting = new Painting();
             myPainting.Myname = "Mona Lisa";
-            myPainting.Myartist = "Leonardo da Vinci";
             myPainting.Mymedium = "Oil";
             myPainting.Myyear = 1506;
 
+            // Inheritance
+            Leo newLeo = new Leo();
+
             Console.WriteLine("Name: " + myPainting.Myname);
-            Console.WriteLine("Artist: " + myPainting.Myartist);
+            Console.WriteLine("Artist: " + newLeo.artist);
             Console.WriteLine("Medium: " + myPainting.Mymedium);
             Console.WriteLine("Year: " + myPainting.Myyear);
         }
