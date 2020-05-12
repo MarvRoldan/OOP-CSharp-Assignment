@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marvin\\Desktop\\OOP-C#\\OOP-C#.csproj": {}
+    "C:\\Users\\Marvin\\Desktop\\OOP-CSharp-Assignment\\OOP-C#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marvin\\Desktop\\OOP-C#\\OOP-C#.csproj": {
+    "C:\\Users\\Marvin\\Desktop\\OOP-CSharp-Assignment\\OOP-C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marvin\\Desktop\\OOP-C#\\OOP-C#.csproj",
+        "projectUniqueName": "C:\\Users\\Marvin\\Desktop\\OOP-CSharp-Assignment\\OOP-C#.csproj",
         "projectName": "OOP-C#",
-        "projectPath": "C:\\Users\\Marvin\\Desktop\\OOP-C#\\OOP-C#.csproj",
+        "projectPath": "C:\\Users\\Marvin\\Desktop\\OOP-CSharp-Assignment\\OOP-C#.csproj",
         "packagesPath": "C:\\Users\\Marvin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marvin\\Desktop\\OOP-C#\\obj\\",
+        "outputPath": "C:\\Users\\Marvin\\Desktop\\OOP-CSharp-Assignment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marvin\\AppData\\Roaming\\NuGet\\NuGet.Config",

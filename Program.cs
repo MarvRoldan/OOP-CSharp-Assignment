@@ -2,7 +2,7 @@
 
 namespace Painting
 {
-    class Painting
+    abstract class Painting
     {
         private string name;
 
@@ -60,7 +60,11 @@ namespace Painting
 
     class Leo : Painting
     {
+        public string name = "Mona Lisa";
         public string artist = "Leonardo da Vinci";
+        public string medium = "Oil";
+        public int year = 1506;
+
 
         public override void isamaster() {
             Console.WriteLine("Is a Renaissance Master");
@@ -76,18 +80,13 @@ namespace Painting
         static void Main(string[] args)
         {
             // Encapsulation 
-            Painting myPainting = new Painting();
-            myPainting.Myname = "Mona Lisa";
-            myPainting.Mymedium = "Oil";
-            myPainting.Myyear = 1506;
-
             // Inheritance
             Leo newLeo = new Leo();
 
-            Console.WriteLine("Name: " + myPainting.Myname);
+            Console.WriteLine("Name: " + newLeo.name);
             Console.WriteLine("Artist: " + newLeo.artist);
-            Console.WriteLine("Medium: " + myPainting.Mymedium);
-            Console.WriteLine("Year: " + myPainting.Myyear);
+            Console.WriteLine("Medium: " + newLeo.medium);
+            Console.WriteLine("Year: " + newLeo.year);
 
             // Polymorphism
             newLeo.isamaster();
